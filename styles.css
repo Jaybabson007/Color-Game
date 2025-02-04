@@ -57,3 +57,20 @@
   .color-box:hover {
     transform: scale(1.02);
   }
+
+  .game-status {
+    min-height: 24px;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .game-status.correct {
+    color: #4caf50;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .game-status.wrong {
+    color: #f44336;
+    animation: shake 0.5s ease;
+  }
