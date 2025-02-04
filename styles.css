@@ -23,3 +23,25 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .game-info {
+    margin-bottom: 2rem;
+  }
+  
+  .instructions {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .score-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
