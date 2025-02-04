@@ -139,3 +139,23 @@
     }
   }
   
+  /* Responsive Design */
+@media (max-width: 750px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    .color-box {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .options-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
