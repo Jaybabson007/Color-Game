@@ -18,7 +18,7 @@ const gameStatus = document.getElementById('gameStatus');
 const colorGrid = document.getElementById('colorGrid');
 const newGameButton = document.getElementById('newGameButton');
 
-// Generate a random color from the palette
+// Generates a random color from the palette
 function getRandomColor() {
     return COLORS[Math.floor(Math.random() * COLORS.length)];
 }
