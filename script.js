@@ -37,5 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return colors[Math.floor(Math.random() * colors.length)]
       }
 
+ // Generate random colors for options, including the correct one
+ function generateColorOptions(correctColor) {
+    const options = [correctColor]
+    while (options.length < 6) {
+      const newColor = getRandomColor()
+      if (!options.includes(newColor)) {
+        options.push(newColor)
+      }
+    }
+    return shuffleArray(options)
+  }
 
     })    
