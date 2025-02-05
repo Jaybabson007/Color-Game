@@ -78,5 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+    // Start a new game
+    function startNewGame() {
+        // Reset game status
+        gameStatus.textContent = ""
+        gameStatus.className = "game-status"
+    }
 
-    })    
+})    
