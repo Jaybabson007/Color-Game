@@ -57,4 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     return array
   }
+
+    // Update game status with animation
+    function updateGameStatus(message, isCorrect) {
+        gameStatus.textContent = message
+        gameStatus.className = "game-status"
+        void gameStatus.offsetWidth // Trigger reflow for animation
+        gameStatus.classList.add(isCorrect ? "correct" : "wrong")
+      }
+
+    
     })    
