@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", () => {
         // Reset game status
         gameStatus.textContent = ""
         gameStatus.className = "game-status"
+
+    // Generate new correct color
+    correctColor = getRandomColor()
+    colorBox.style.backgroundColor = correctColor
+
+    // Generate and assign color options
+    const options = generateColorOptions(correctColor)
+    colorOptions.forEach((option, index) => {
+      option.style.backgroundColor = options[index]
     }
 
 })    
