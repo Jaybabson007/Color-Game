@@ -92,6 +92,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const options = generateColorOptions(correctColor)
     colorOptions.forEach((option, index) => {
       option.style.backgroundColor = options[index]
+
+     // Remove old event listeners
+     option.replaceWith(option.cloneNode(true))
+
+     // Add new event listener
+     document.querySelectorAll('[data-testid="colorOption"]')[index].addEventListener("click", () => {
+       handleColorClick(options[index])
+     })
+   })
     }
 
 })    
