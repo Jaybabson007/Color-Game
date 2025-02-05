@@ -73,6 +73,9 @@ The game works in all modern browsers:
 - Time-based challenges
 - Color mixing mode
 
+## Author
+Joel Yahaya
+
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
