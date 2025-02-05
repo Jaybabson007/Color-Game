@@ -74,7 +74,7 @@ The game works in all modern browsers:
 - Color mixing mode
 
 ## Author
-Joel Yahaya
+### Joel Yahaya
 
 ## Contributing
 
