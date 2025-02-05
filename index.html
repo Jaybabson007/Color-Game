@@ -7,37 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Color Guessing Game</h1>
-        
-        <!-- Game Info Section-->
-        <div class="game-info">
-            <p data-testid="gameInstructions" class="instructions">
-                Can you guess the correct color? Click on the matching color below!
-            </p>
-            <p class="score-display">
-                Score: <span data-testid="score">0</span>
-            </p>
-        </div>
+    <div class="min-h-screen">
+        <div class="game-container">
+            <h1>Color Guessing Game</h1>
 
-        <!-- Box Section -->
-        <div data-testid="colorBox" class="color-box"></div>
-        
-        <p data-testid="gameStatus" class="game-status"></p>
-        
-        <div class="color-options">
-            <div class="options-grid">
-                <button data-testid="colorOption" class="color-option"></button>
-                <button data-testid="colorOption" class="color-option"></button>
-                <button data-testid="colorOption" class="color-option"></button>
-                <button data-testid="colorOption" class="color-option"></button>
-                <button data-testid="colorOption" class="color-option"></button>
-                <button data-testid="colorOption" class="color-option"></button>
+            <div class="game-info">
+                <p data-testid="gameInstructions">
+                    Can you guess the correct color? Click on the matching color below!
+                </p>
+                <p class="score-text">
+                    Score: <span data-testid="score" id="score">0</span>
+                </p>
             </div>
-        </div>
 
-        <!-- New Game Button -->
-        <button data-testid="newGameButton" class="new-game-btn">New Game</button>
+            <div data-testid="colorBox" id="colorBox" class="color-box"></div>
+
+            <p data-testid="gameStatus" id="gameStatus" class="game-status"></p>
+
+            <div class="color-grid" id="colorGrid"></div>
+
+            <button data-testid="newGameButton" id="newGameButton" class="new-game-button">
+                New Game
+            </button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
