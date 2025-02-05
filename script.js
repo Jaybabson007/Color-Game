@@ -101,6 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
        handleColorClick(options[index])
      })
    })
-    }
+  }
+  // Reset game
+  function resetGame() {
+    score = 0
+    scoreElement.textContent = score
+    startNewGame()
+  }
 
+  // Event listeners
+  newGameButton.addEventListener("click", resetGame)
+
+  // Initialize the game
+  startNewGame()
 })    
