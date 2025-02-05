@@ -66,5 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
         gameStatus.classList.add(isCorrect ? "correct" : "wrong")
       }
 
-    
+    // Handle color option click
+  function handleColorClick(clickedColor) {
+    if (clickedColor === correctColor) {
+      score++
+      scoreElement.textContent = score
+      updateGameStatus("Correct! Well done! 🎉", true)
+      setTimeout(startNewGame, 1500)
+    } else {
+      updateGameStatus("Wrong! Try again! 🤔", false)
+    }
+  }
+
+
     })    
