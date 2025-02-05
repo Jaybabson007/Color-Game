@@ -93,3 +93,5 @@ newGameButton.addEventListener('click', resetGame);
 
 // Initialize game
 startNewGame();
+
+//End of script.js
